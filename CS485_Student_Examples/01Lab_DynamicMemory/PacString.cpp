@@ -1,6 +1,11 @@
 #include "PacString.h"
 #include "String"
 
+PacString::PacString()
+{
+	mpszData = "";
+}
+
 //Constructor
 PacString::PacString(const char *pszString)
 {
@@ -37,6 +42,21 @@ PacString& PacString::operator=(PacString rcData)
 	strcpy_s(mpszData, sizeof(char*), rcData.mpszData);
 
 	return rcData;
+}
+
+
+PacString & PacString::operator+=(const PacString & rcData)
+{
+	//NewString += oldString
+
+
+	return *this;
+}
+
+PacString PacString::operator+(const PacString & rcData) const
+{
+	//NewString = oldString + olderString
+	return PacString();
 }
 
 std::ostream& operator<<(std::ostream &out, const PacString &rcData)
