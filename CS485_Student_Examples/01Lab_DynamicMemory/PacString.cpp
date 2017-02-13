@@ -49,6 +49,9 @@ PacString & PacString::operator+=(const PacString & rcData)
 {
 	//NewString += oldString
 
+	//int size = (int)strlen(rcData.mpszData) + (int)strlen(mpszData) + 1;
+
+	//strcat_s(mpszData, size, rcData.mpszData);
 
 	return *this;
 }

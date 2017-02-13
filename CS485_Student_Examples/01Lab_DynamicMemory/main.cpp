@@ -24,6 +24,7 @@ int main ()
   PacString s2 ("World");
   std::cout << "s2: " << s2 << std::endl;
 
+
   //PacString s3;
 
   //s3 = s1 + s2;
@@ -35,7 +36,7 @@ int main ()
   //std::cout << "s3: " << s3 << std::endl;
 
 
-
+  
   // TODO:
   PacString *pcDynString;
 
@@ -51,7 +52,7 @@ int main ()
   // pcDynString
   // Display pcDynString.
   // deallocate the object pcDynString
-
+  
   return EXIT_SUCCESS;
 }
 
